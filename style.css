@@ -1,0 +1,375 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #f6fbfb;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./img/picture_right.png), url(./img/picture_left.png), url(./img/picture_right_2.png), url(./img/picture_left_2.png), url(./img/picture_right_3.png), url(./img/picture_left_3.png);
+  background-position: right 41px, left 480px, right 40vh, left 60vh, right 70vh, left 190vh;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+.center {
+  position: relative;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__top {
+  position: absolute;
+  width: 100%;
+  height: 124px;
+  padding-top: 13px;
+  border-bottom-right-radius: 44px;
+  border-bottom-left-radius: 44px;
+  background-color: #eeeeee;
+  box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, 0.19);
+}
+.header__box {
+  display: flex;
+  height: 44px;
+  margin-left: 86px;
+  margin-right: 86px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__text {
+  max-width: 260px;
+  font-size: 15px;
+  font-family: "FuturaPT", sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 0.9;
+}
+.header__menu {
+  display: grid;
+  grid-template-columns: repeat(6, 124px);
+  gap: 5px;
+}
+.header__link {
+  padding-top: 11px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-family: "FuturaPT", sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 44px;
+  transition: 0.2s;
+}
+.header__link:hover {
+  background-color: #8fd5d6;
+}
+.header__box1 {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  max-width: 1044px;
+  margin-left: 86px;
+  margin-right: 86px;
+}
+.header__stock {
+  max-width: 410px;
+  display: grid;
+  grid-template-columns: 144px 144px 1fr;
+  gap: 29px;
+}
+.header__stock-link {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-family: "FuturaPT", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  background-color: #02aeb2;
+  border-radius: 44px;
+  transition: 0.2s;
+}
+.header__stock-link:hover {
+  background-color: #009194;
+}
+.header__stock-link_white {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-family: "FuturaPT", sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 44px;
+  transition: 0.2s;
+}
+.header__stock-link_white:hover {
+  background-color: #8fd5d6;
+}
+.header__stock-search {
+  background-image: url(./img/search.png);
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 44px;
+  background-color: #ffffff;
+  margin-left: 18px;
+  width: 45px;
+  height: 44px;
+}
+.header__stock-search:hover {
+  background-color: #8fd5d6;
+  transition: 0.3s;
+}
+.header__logo {
+  width: 120px;
+  height: 44px;
+}
+.header__function {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, 44px);
+  width: 234px;
+}
+.header__user, .header__frcircle, .header__shopping, .header__circle-phone {
+  border-radius: 44px;
+  background-color: #ffffff;
+  width: 44px;
+  height: 44px;
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+}
+.header__user:hover, .header__frcircle:hover, .header__shopping:hover, .header__circle-phone:hover {
+  background-color: #8fd5d6;
+}
+.header__user {
+  background-image: url(./img/user.png);
+}
+.header__frcircle {
+  background-image: url(./img/frcircle.png);
+}
+.header__shopping {
+  background-image: url(./img/shopping.png);
+}
+.header__circle-phone {
+  background-image: url(./img/circle-phone.png);
+}
+.header__tel {
+  font-size: 12px;
+  font-family: "FuturaPT", sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1.1;
+  width: 150px;
+}
+.header__bottom {
+  margin: 0 2px;
+  height: 180px;
+  padding-left: 78px;
+  background-color: #02a8ac;
+  border-bottom-right-radius: 44px;
+  border-bottom-left-radius: 44px;
+  box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, 0.19);
+}
+.header__box3 {
+  position: absolute;
+  top: 137px;
+  height: 44px;
+  display: flex;
+}
+.header__bottom-link {
+  padding-top: 7px;
+  border-right: 1px solid #85c3c4;
+  text-decoration: none;
+  padding-left: 26px;
+  font-size: 18px;
+  font-family: "FuturaPT";
+  color: rgb(255, 255, 255);
+  line-height: 1.364;
+}
+.header__bottom-link:hover {
+  transform: matrix(0.9613624653, 0, 0, 0.9596587452, 0, 0);
+}
+.header__bottom-v {
+  padding-right: 8px;
+  padding-left: 13px;
+  width: 10px;
+}
+.header__banner {
+  height: 310px;
+  background-image: url(./img/banner.png);
+  background-position: top;
+  background-size: 1200px;
+  border-radius: 44px;
+  padding-top: 62px;
+}
+.header__registration {
+  background-color: #ffffff;
+  border-radius: 44px;
+  margin-left: 76%;
+  width: 220px;
+  height: 200px;
+}
+.header__ban-text {
+  padding-bottom: 20px;
+  padding-left: 22px;
+  padding-top: 22px;
+  font-size: 22px;
+  font-family: "FuturaPT", sans-serif;
+  color: #00040b;
+  line-height: 1;
+  text-align: left;
+}
+.header__ban-text_color {
+  color: #02aeb2;
+}
+.header__ban-link {
+  position: relative;
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  font-size: 18px;
+  font-family: "FuturaPT", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(-4deg, rgb(42, 101, 95) 0%, rgb(2, 174, 178) 100%);
+  border-radius: 44px;
+  box-shadow: 0px 8px 18px 0px rgba(42, 101, 95, 0.19);
+}
+.header__ban-link:before {
+  content: "Зарегистрироваться";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  border-radius: 44px;
+  box-shadow: 0px 8px 18px 0px rgba(42, 101, 95, 0.19);
+  background: linear-gradient(-4deg, rgb(34, 82, 77) 0%, rgb(1, 155, 158) 100%);
+  opacity: 0;
+  transition: 0.2s;
+}
+.header__ban-link:hover:before {
+  opacity: 1;
+}
+
+.info {
+  height: 937px;
+  background-color: #eeeeee;
+  border-radius: 44px;
+}
+.info__top {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 342px);
+  grid-template-rows: repeat(2, 120px);
+  row-gap: 65px;
+  grid-template-areas: "header header card1" "card2 card3 card4";
+  padding-left: 86px;
+  padding-right: 86px;
+  align-items: center;
+}
+.info__header {
+  grid-area: header;
+  padding: 10px 0 10px 130px;
+  font-size: 24px;
+  width: 460px;
+  font-family: "FuturaPT", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  background-image: url(./img/info_logo.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 102px;
+}
+.info__card {
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 118px;
+  height: 118px;
+  background-size: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.info__card1 {
+  grid-area: card1;
+  background-image: url(./img/card1.png);
+  background-size: 50px;
+}
+.info__card2 {
+  grid-area: card2;
+  background-image: url(./img/card2.png);
+}
+.info__card3 {
+  grid-area: card3;
+  background-image: url(./img/card3.png);
+}
+.info__card4 {
+  grid-area: card4;
+  background-image: url(./img/card4.png);
+}
+.info__text {
+  width: 210px;
+  padding-left: 132px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: "FuturaPT", sans-serif;
+  color: rgb(0, 4, 11);
+  line-height: 1.25;
+  font-weight: normal;
+  font-style: normal;
+}
+.info__text2 {
+  padding-top: 21px;
+}
+.info__text3 {
+  padding-top: 14px;
+}
+.info__text4 {
+  padding-top: 14px;
+}
+.info__button {
+  font-size: 13px;
+  font-family: "FuturaPT";
+  color: rgb(5, 168, 172);
+  font-weight: normal;
+  font-style: normal;
+  display: block;
+  width: 124px;
+  padding: 5px 10px;
+  margin-left: 132px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 27px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgb(5, 168, 172);
+}
+.info__button:hover {
+  color: rgb(5, 100, 102);
+  border-color: rgb(5, 100, 102);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.main {
+  height: 1806px;
+  border-top-left-radius: 44px;
+  border-top-right-radius: 44px;
+  background-color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

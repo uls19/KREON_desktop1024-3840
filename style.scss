@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$border-radius: 44px;
+// $border-radius: 90px;
+$box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
+
+.container {
+    background-color: #f6fbfb;
+    max-width: 1920px;
+    // max-width: 3840px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:
+        url(./img/picture_right.png),
+        url(./img/picture_left.png),
+        url(./img/picture_right_2.png),
+        url(./img/picture_left_2.png),
+        url(./img/picture_right_3.png),
+        url(./img/picture_left_3.png);
+    background-position:
+        right 41px,
+        left 480px,
+        right 40vh,
+        left 60vh,
+        right 70vh,
+        left 190vh;
+    background-repeat: no-repeat;
+    background-size: 25%;
+}
+
+.center {
+    position: relative;
+    max-width: 1200px;
+    // max-width: 2800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    &__top {
+        position: absolute;
+        width: 100%;
+        height: 124px;
+        // height: 286px;
+        padding-top: 13px;
+        // padding-top: 30px;
+        border-bottom-right-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        background-color: #eeeeee;
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
+    }
+
+    &__box {
+        display: flex;
+        height: 44px;
+        // height: 102px;
+        margin-left: 86px;
+        margin-right: 86px;
+        // margin-left: 200px;
+        // margin-right: 200px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+
+        max-width: 260px;
+        font-size: 15px;
+        font-family: "FuturaPT", sans-serif;
+        color: rgb(0, 0, 0);
+        line-height: 0.9;
+
+        // max-width: 600px;
+        // font-size: 36px;
+        // font-family: "FuturaPT", sans-serif;
+        // color: rgb(0, 0, 0);
+        // line-height: 2.161;
+    }
+
+    &__menu {
+        display: grid;
+        // grid-template-columns: repeat(6, 286px);
+        // gap: 12px;
+        grid-template-columns: repeat(6, 124px);
+        gap: 5px;
+    }
+
+    &__link {
+        padding-top: 11px;
+        padding-bottom: 12px;
+        font-size: 16px;
+        // padding-top: 12px;
+        // padding-bottom: 12px;
+        // font-size: 36px;
+        font-family: "FuturaPT", sans-serif;
+        color: rgb(0, 0, 0);
+        // line-height: 2.161;
+        text-align: center;
+        text-decoration: none;
+        background-color: #ffffff;
+        border-radius: $border-radius;
+        transition: 0.2s;
+    }
+
+    &__link:hover {
+        background-color: #8fd5d6;
+
+    }
+
+    &__box1 {
+        margin-top: 18px;
+        // margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 44px;
+        max-width: 1044px;
+        margin-left: 86px;
+        margin-right: 86px;
+        // height: 102px;
+        // max-width: 2400px;
+        // margin-left: 200px;
+        // margin-right: 200px;
+    }
+
+    &__stock {
+        max-width: 410px;
+        // max-width: 942px;
+        display: grid;
+        grid-template-columns: 144px 144px 1fr;
+        gap: 29px;
+        // grid-template-columns: 330px 330px 1fr;
+        // gap: 68px;
+    }
+
+    &__stock-link {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 16px;
+        // padding-top: 12px;
+        // padding-bottom: 12px;
+        // font-size: 36px;
+        font-family: "FuturaPT", sans-serif;
+        color: rgb(255, 255, 255);
+        // line-height: 2.161;
+        text-align: center;
+        text-decoration: none;
+        background-color: #02aeb2;
+        border-radius: $border-radius;
+        transition: 0.2s;
+    }
+
+    &__stock-link:hover {
+        background-color: #009194;
+    }
+
+
+
+    &__stock-link_white {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 16px;
+        // padding-top: 12px;
+        // padding-bottom: 12px;
+        // font-size: 36px;
+        font-family: "FuturaPT", sans-serif;
+        color: rgb(0, 0, 0);
+        // line-height: 2.161;
+
+        text-align: center;
+        text-decoration: none;
+        background-color: #ffffff;
+        border-radius: $border-radius;
+        transition: 0.2s;
+    }
+
+    &__stock-link_white:hover {
+        background-color: #8fd5d6;
+    }
+
+
+    &__stock-search {
+        background-image: url(./img/search.png);
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: $border-radius;
+        background-color: #ffffff;
+        margin-left: 18px;
+        width: 45px;
+        height: 44px;
+        // margin-left: 40px;
+        // width: 101px;
+        // height: 101px;
+
+    }
+
+    &__stock-search:hover {
+        background-color: #8fd5d6;
+        transition: 0.3s;
+    }
+
+    &__logo {
+        width: 120px;
+        height: 44px;
+        // width: 275px;
+        // height: 102px;
+    }
+
+    &__function {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(4, 44px);
+        width: 234px;
+        // gap: 42px;
+        // grid-template-columns: repeat(4, 101px);
+        // width: 540px;
+    }
+
+    &__user,
+    &__frcircle,
+    &__shopping,
+    &__circle-phone {
+        border-radius: $border-radius;
+        background-color: #ffffff;
+        width: 44px;
+        height: 44px;
+        // width: 101px;
+        // height: 101px;
+        background-size: 18px;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+    }
+
+    &__user:hover,
+    &__frcircle:hover,
+    &__shopping:hover,
+    &__circle-phone:hover {
+        background-color: #8fd5d6;
+    }
+
+    &__user {
+        background-image: url(./img/user.png);
+    }
+
+    &__frcircle {
+        background-image: url(./img/frcircle.png);
+    }
+
+    &__shopping {
+        background-image: url(./img/shopping.png);
+    }
+
+    &__circle-phone {
+        background-image: url(./img/circle-phone.png);
+    }
+
+    &__tel {
+        font-size: 12px;
+        font-family: "FuturaPT", sans-serif;
+        color: rgb(0, 0, 0);
+        line-height: 1.1;
+        width: 150px;
+
+        // font-size: 30px;
+        // line-height: 1.2;
+        // width: 343px;
+
+    }
+
+    &__bottom {
+        margin: 0 2px;
+        height: 180px;
+        padding-left: 78px;
+        // margin: 0 2px;
+        // height: 421px;
+        // padding-left: 180px;
+        background-color: #02a8ac;
+        border-bottom-right-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
+
+    }
+
+    &__box3 {
+        position: absolute;
+        top: 137px;
+        height: 44px;
+        display: flex;
+        // top: 316px;
+        // height: 102px;
+    }
+
+    &__bottom-link {
+        padding-top: 7px;
+        // padding-top: 16px;
+        // height: 90px;
+        border-right: 1px solid #85c3c4;
+        text-decoration: none;
+        padding-left: 26px;
+        font-size: 18px;
+        // padding-left: 60px;
+        // font-size: 44px;
+        font-family: "FuturaPT";
+        color: rgb(255, 255, 255);
+        line-height: 1.364;
+
+    }
+
+    &__bottom-link:hover {
+        transform: matrix(0.96136246530963, 0, 0, 0.95965874516653, 0, 0);
+    }
+
+    &__bottom-v {
+        padding-right: 8px;
+        padding-left: 13px;
+        width: 10px;
+        // padding-right: 20px;
+        // padding-left: 30px;
+    }
+
+
+    &__banner {
+        // height: 866px;
+        height: 310px;
+        background-image: url(./img/banner.png);
+        background-position: top;
+        background-size: 1200px;
+        border-radius: 44px;
+        padding-top: 62px;
+    }
+
+    &__registration {
+        background-color: #ffffff;
+        border-radius: $border-radius;
+        margin-left: 76%;
+        width: 220px;
+        height: 200px;
+
+    }
+
+    &__ban-text {
+        padding-bottom: 20px;
+        padding-left: 22px;
+        padding-top: 22px;
+        font-size: 22px;
+        font-family: "FuturaPT", sans-serif;
+        color: #00040b;
+        line-height: 1;
+        text-align: left;
+
+    }
+
+    &__ban-text_color {
+        color: #02aeb2;
+    }
+
+    &__ban-link {
+        position: relative;
+        display: block;
+        width: 180px;
+        margin: 0 auto;
+        padding-top: 11px;
+        padding-bottom: 12px;
+        font-size: 18px;
+        font-family: "FuturaPT", sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-decoration: none;
+        background: linear-gradient(-4deg, rgb(42, 101, 95) 0%, rgb(2, 174, 178) 100%);
+        border-radius: $border-radius;
+        box-shadow: 0px 8px 18px 0px rgba(42, 101, 95, 0.19);
+    }
+
+    &__ban-link:before {
+        content: 'Зарегистрироваться';
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        line-height: 1;
+        border-radius: $border-radius;
+        box-shadow: 0px 8px 18px 0px rgba(42, 101, 95, 0.19);
+        background: linear-gradient(-4deg, rgb(34, 82, 77) 0%, rgb(1, 155, 158) 100%);
+        opacity: 0;
+        transition: 0.2s;
+
+    }
+
+    &__ban-link:hover:before {
+        opacity: 1;
+
+    }
+
+}
+
+.info {
+    height: 937px;
+    // height: 2156px;
+    background-color: #eeeeee;
+    border-radius: $border-radius;
+
+
+    &__top {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 342px);
+        grid-template-rows: repeat(2, 120px);
+        row-gap: 65px;
+        grid-template-areas:
+            "header header card1"
+            "card2 card3 card4";
+        padding-left: 86px;
+        padding-right: 86px;
+        align-items: center;
+        // row-gap: 150px;
+        // padding-top: 139px ;
+        // grid-template-rows: repeat(2, 280px); 
+        // grid-template-columns: repeat(3, 800px);
+        // padding-left:200px ;
+        // padding-right: 200px;
+    }
+
+    &__header {
+        grid-area: header;
+        padding: 10px 0 10px 130px;
+        font-size: 24px;
+        width: 460px;
+        font-family: "FuturaPT", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: rgb(0, 0, 0);
+        background-image: url(./img/info_logo.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 102px;
+        // padding-left: 300px;
+        // background-size: 239px;     
+    }
+
+
+    &__card {
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        width: 118px;
+        height: 118px;
+        background-size: 64px;
+        background-repeat: no-repeat;
+        background-position: center;
+        // width: 268px;
+
+    }
+
+    &__card1 {
+        grid-area: card1;
+        background-image: url(./img/card1.png);
+        background-size: 50px;
+    }
+
+    &__card2 {
+        grid-area: card2;
+        background-image: url(./img/card2.png);
+    }
+
+    &__card3 {
+        grid-area: card3;
+        background-image: url(./img/card3.png);
+    }
+
+    &__card4 {
+        grid-area: card4;
+        background-image: url(./img/card4.png);
+    }
+
+    &__text {
+        width: 210px;
+        padding-left: 132px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-family: "FuturaPT", sans-serif;
+        color: rgb(0, 4, 11);
+        line-height: 1.25;
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    //   &__text1{}   
+    &__text2 {
+        padding-top: 21px;
+
+    }
+
+    &__text3 {
+        padding-top: 14px;
+    }
+
+    &__text4 {
+        padding-top: 14px;
+    }
+
+    &__button {
+
+        font-size: 13px;
+        font-family: "FuturaPT";
+        color: rgb(5, 168, 172);
+        font-weight: normal;
+        font-style: normal;
+        display: block;
+        width: 124px;
+        // width: 315px;
+        padding: 5px 10px;
+        margin-left: 132px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 27px;
+        border: 2px;
+        border-style: solid;
+        border-color: rgb(5, 168, 172);
+
+
+    }
+
+    &__button:hover {
+        color: rgb(5, 100, 102);
+        border-color: rgb(5, 100, 102);
+        transition: color 0.2s, border-color 0.2s;
+    }
+
+}
+
+
+
+
+
+
+.main {
+    height: 1806px;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    background-color: #ffffff;
+}
