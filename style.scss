@@ -6,9 +6,11 @@
 $border-radius: 44px;
 // $border-radius: 90px;
 $box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
+$background_button: -webkit-linear-gradient(-4deg, rgb(42, 101, 95) 0%, rgb(2, 174, 178) 100%);
+$background_button_hover: linear-gradient(-4deg, rgb(29, 70, 66) 0%, rgb(1, 191, 194) 100%);
 
 .button {
-    height: 21px;
+    // height: 21px;
     position: relative;
     display: block;
     margin: 0 auto;
@@ -19,12 +21,18 @@ $box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
     color: rgb(255, 255, 255);
     text-align: center;
     text-decoration: none;
-    background: linear-gradient(-4deg, rgb(42, 101, 95) 0%, rgb(2, 174, 178) 100%);
+    background: $background_button;
     border-radius: $border-radius;
     box-shadow: 0px 8px 18px 0px rgba(42, 101, 95, 0.19);
 }
 
+.button:hover {
+    background: $background_button_hover;
+}
+
+
 .container {
+    position: relative;
     background-color: #f6fbfb;
     max-width: 1920px;
     // max-width: 3840px;
@@ -33,19 +41,25 @@ $box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
     background-image:
         url(./img/picture_right.png),
         url(./img/picture_left.png),
+        url(./img/top_right.png),
+        url(./img/top_left.png),
         url(./img/picture_right_2.png),
         url(./img/picture_left_2.png),
         url(./img/picture_right_3.png),
         url(./img/picture_left_3.png);
     background-position:
-        right 41px,
-        left 480px,
-        right 40vh,
-        left 60vh,
-        right 70vh,
-        left 190vh;
+        right 0px,
+        left 380px,
+        right 1050px,
+        left 1320px,
+        right 2023px,
+        left 2240px,
+        right 4000px,
+        left 4000px;
     background-repeat: no-repeat;
-    background-size: 25%;
+    background-size: 570px, 400px, 275px, 265px, 320px, 330px, 320px, 400px;
+
+
 }
 
 .center {
@@ -67,9 +81,7 @@ $box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
         border-bottom-right-radius: $border-radius;
         border-bottom-left-radius: $border-radius;
         background-color: #eeeeee;
-        -webkit-box-shadow: $box-shadow;
-        -moz-box-shadow: $box-shadow;
-        box-shadow: $box-shadow;
+
     }
 
     &__box {
@@ -396,12 +408,20 @@ $box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
         margin-bottom: 26px;
     }
 
-    &__ban-link:hover{
-        background: linear-gradient(-4deg, rgb(29, 70, 66) 0%, rgb(1, 191, 194) 100%);
+}
 
-    }
+
+.main {
+    height: 19000px;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    background-color: #ffffff;
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
 
 }
+
 
 .info {
     height: 937px;
@@ -449,13 +469,11 @@ $box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
 
 
     &__card {
-        border-radius: 50%;
-        background-color: rgb(255, 255, 255);
-        width: 118px;
-        height: 118px;
-        background-size: 64px;
+        height: 120px;
+        background-size: 118px;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: left center;
+
         // width: 268px;
 
     }
@@ -463,8 +481,8 @@ $box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
     &__card1 {
         grid-area: card1;
         background-image: url(./img/card1.png);
-        background-size: 50px;
     }
+
 
     &__card2 {
         grid-area: card2;
@@ -493,22 +511,31 @@ $box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
         font-style: normal;
     }
 
-    //   &__text1{}   
+    &__text1 {
+        padding-top: 0;
+        height: 75px;
+
+
+    }
+
     &__text2 {
         padding-top: 21px;
+        height: 25px;
 
     }
 
     &__text3 {
         padding-top: 14px;
+        height: 50px;
     }
 
     &__text4 {
         padding-top: 14px;
+        height: 50px;
     }
 
     &__button {
-
+        display: block;
         font-size: 13px;
         font-family: "FuturaPT";
         color: rgb(5, 168, 172);
@@ -536,8 +563,21 @@ $box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
     }
 
     &__brands {
-        max-width: 430px;
+        max-width: 446px;
         padding: 70px 0 55px 86px;
+        height: 52px;
+        font-size: 62px;
+        font-family: "Bebas Neue Cyrillic", sans-serif;
+        font-weight: 400;
+        background-color: #2AA5A0;
+        background-image: $background_button;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        letter-spacing: 14px;
+        font-style: normal;
+        text-align: center;
 
         // max-width: 990px;
         // padding: 162px 0 162px 162px;
@@ -553,6 +593,7 @@ $box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
         margin-bottom: 38px;
         justify-items: center;
         grid-row-gap: 10px;
+        height: 265px;
 
     }
 
@@ -566,26 +607,309 @@ $box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, .19);
     &__ban-link {
         max-width: 240px;
     }
-   
-    &__ban-link:hover {
-        background: linear-gradient(-4deg, rgb(29, 70, 66) 0%, rgb(1, 191, 194) 100%);
-        
-
-    }
-
-
 
 }
 
 
+.news {
+    &__banner {
+        padding-top: 235px;
+        background-image: url(./img/NEWS.png);
+        background-size: 608px;
+        height: 85px;
+        background-repeat: no-repeat;
+        background-position: left 180px bottom 0;
+
+        // padding-top: 542px;
+    }
+
+
+    &__ban-link {
+        max-width: 240px;
+        margin-left: 800px;
+        margin-bottom: 100px;
+
+
+    }
+
+    &__inform {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-left: 76px;
+        padding-right: 76px;
+        height: 826px;
+        margin-top: 70px;
+        // margin-top: 162px;
+        margin-bottom: 62px;
+        // height: 1900px;
+    }
+
+    &__product {
+        border-radius: 26px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: -0.454px 10px 35px 0px rgba(2, 69, 70, 0.19)
+    }
+
+    &__image {
+        background-image: url(./img/EK0038.png);
+        background-repeat: no-repeat;
+        background-size: 227px 203px;
+        background-position: top 33px center;
+
+    }
+
+    &__image1 {
+        background-image: url(./img/EK0038-1.png);
+        background-repeat: no-repeat;
+        background-size: 84px 187px;
+        background-position: top 43px center;
+
+    }
+
+    &__image2 {
+        background-image: url(./img/EK0038-2.png);
+        background-repeat: no-repeat;
+        background-size: 156px 200px;
+        background-position: top 41px center;
+    }
+
+    &__image3 {
+        background-image: url(./img/EK0038-3.png);
+        background-repeat: no-repeat;
+        background-size: 93px 200px;
+        background-position: top 43px center;
+    }
+
+    &__image4 {
+        background-image: url(./img/EK0038.png);
+        background-repeat: no-repeat;
+        background-size: 227px 203px;
+        background-position: top 33px center;
+    }
+
+    &__image5 {
+        background-image: url(./img/EK0038-1.png);
+        background-repeat: no-repeat;
+        background-size: 84px 187px;
+        background-position: top 43px center;
+
+    }
+
+    &__image6 {
+        background-image: url(./img/EK0038-2.png);
+        background-repeat: no-repeat;
+        background-size: 156px 200px;
+        background-position: top 41px center;
+
+    }
+
+    &__image7 {
+        background-image: url(./img/EK0038-3.png);
+        background-repeat: no-repeat;
+        background-size: 93px 200px;
+        background-position: top 43px center;
+
+
+    }
+
+    &__text {
+        display: block;
+        padding-top: 253px;
+        padding-left: 25px;
+        padding-bottom: 12px;
+        font-size: 19px;
+        // font-size: 43px;
+        font-family: "FuturaPT", sans-serif;
+        color: rgb(0, 4, 11);
+        line-height: 1.2;
+        width: 180px;
+        height: 70px;
+
+    }
+
+    &__product-link {
+        width: 208px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+
+    }
+}
+
+.advantages {
+    padding-left: 76px;
+    padding-right: 76px;
+    // height: 826px;
+    margin-bottom: 86px;
 
 
 
+    &__header {
+        height: 128px;
+        font-size: 62px;
+        font-family: "Bebas Neue Cyrillic", sans-serif;
+        color: rgb(32, 32, 32);
+        // background-color: #2AA5A0;
+        // background-image: $background_button;
+        // -webkit-background-clip: text;
+        // background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 14px;
+        font-style: normal;
+    }
+
+    &__inform {
+        display: grid;
+        grid-template-columns: repeat(4, 257px);
+        grid-template-rows: repeat(2, 225px);
+        row-gap: 65px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    &__items {
+        padding-top: 140px;
+        background-size: 118px;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+    }
 
 
-.main {
-    height: 1806px;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
-    background-color: #ffffff;
+    &__item1 {
+        background-image: url(./img/item1.png);
+    }
+
+    &__item2 {
+        background-image: url(./img/item2.png);
+    }
+
+    &__item3 {
+        background-image: url(./img/item3.png);
+    }
+
+    &__item4 {
+        background-image: url(./img/item4.png);
+    }
+
+    &__item5 {
+        background-image: url(./img/item5.png);
+    }
+
+    &__item6 {
+        background-image: url(./img/item6.png);
+    }
+
+    &__item7 {
+        background-image: url(./img/item7.png);
+    }
+
+    &__item8 {
+        background-image: url(./img/item8.png);
+    }
+
+
+
+    &__text1 {
+        padding-left: 0;
+        text-align: center;
+        padding-left: 0;
+        width: auto;
+    }
+
+}
+
+.popular {
+    padding-left: 76px;
+    padding-right: 76px;
+
+    &__header {
+        height: 128px;
+        font-size: 62px;
+        font-family: "Bebas Neue Cyrillic", sans-serif;
+        font-weight: 400;
+        background-color: #2AA5A0;
+        background-image: $background_button;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        letter-spacing: 14px;
+        font-style: normal;
+        text-align: center;
+
+
+
+    }
+
+    &__inform {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        height: 404px;
+        margin-bottom: 62px;
+    }
+}
+
+.well {
+    background-image: url(./img/phone.png);
+    background-repeat: no-repeat;
+    background-size: 251px;
+    height: 251px;
+    background-position: left 372px top;
+
+    &__header {
+        font-size: 62px;
+        font-family: "Bebas Neue Cyrillic", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 14px;
+        font-style: normal;
+        padding-top: 50px;
+    }
+
+    &__interval {
+        padding-left: 124px;
+        background-color: #2AA5A0;
+        background-image: $background_button;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__interval_right {
+        padding-left: 110px;
+    }
+
+    &__text {
+        padding-right: 100px;
+
+        padding-bottom: 10px;
+        text-align: end;
+        font-size: 20px;
+        font-family: "FuturaPT", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: uppercase;
+        background-color: #2AA5A0;
+        background-image: $background_button;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__ban-link {
+        max-width: 240px;
+        margin-left: 720px;
+        margin-bottom: 100px;
+
+
+    }
+
 }
