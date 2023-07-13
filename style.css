@@ -30,7 +30,7 @@
   margin-left: auto;
   margin-right: auto;
   background-image: url(./img/picture_right.png), url(./img/picture_left.png), url(./img/top_right.png), url(./img/top_left.png), url(./img/picture_right_2.png), url(./img/picture_left_2.png), url(./img/picture_right_3.png), url(./img/picture_left_3.png);
-  background-position: right 0px, left 380px, right 1050px, left 1320px, right 2023px, left 2240px, right 4000px, left 4000px;
+  background-position: right 0px, left 380px, right 1050px, left 1320px, right 2023px, left 2240px, right 4660px, left 5000px;
   background-repeat: no-repeat;
   background-size: 570px, 400px, 275px, 265px, 320px, 330px, 320px, 400px;
 }
@@ -270,11 +270,11 @@
 }
 
 .main {
-  height: 19000px;
   border-top-left-radius: 44px;
   border-top-right-radius: 44px;
   background-color: #ffffff;
   box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, 0.19);
+  padding-bottom: 96px;
 }
 
 .info {
@@ -422,6 +422,7 @@
   height: 85px;
   background-repeat: no-repeat;
   background-position: left 180px bottom 0;
+  padding-bottom: 96px;
 }
 .news__ban-link {
   max-width: 240px;
@@ -605,8 +606,10 @@
   background-size: 251px;
   height: 251px;
   background-position: left 372px top;
+  margin-bottom: 62px;
 }
 .well__header {
+  height: 65px;
   font-size: 62px;
   font-family: "Bebas Neue Cyrillic", sans-serif;
   font-weight: 400;
@@ -627,8 +630,8 @@
   padding-left: 110px;
 }
 .well__text {
+  height: 32px;
   padding-right: 100px;
-  padding-bottom: 10px;
   text-align: end;
   font-size: 20px;
   font-family: "FuturaPT", sans-serif;
@@ -644,5 +647,93 @@
 .well__ban-link {
   max-width: 240px;
   margin-left: 720px;
-  margin-bottom: 100px;
+}
+.well__inform {
+  margin-bottom: 0px;
+}
+
+.subscription {
+  padding-left: calc(50% - 520px);
+  padding-right: calc(50% - 520px);
+  background-color: #02aeb2;
+  margin-bottom: 70px;
+}
+.subscription__block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 101px;
+  padding-top: 36px;
+}
+.subscription__text {
+  font-size: 20px;
+  font-family: "FuturaPT";
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+}
+.subscription__mail {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-family: "FuturaPT", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  border-radius: 44px;
+  width: 514px;
+  border: none;
+  outline: none;
+}
+.subscription__button {
+  position: absolute;
+  width: 140px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  top: 43px;
+  right: 7px;
+  border: 0;
+}
+.subscription__check {
+  font-size: 16px;
+  font-family: "FuturaPT";
+  font-weight: 300;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  padding-left: 12px;
+  padding-top: 8px;
+}
+.subscription__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.subscription__checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.subscription__checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #ffffff;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.subscription__checkbox:checked + label::before {
+  border-color: #286863;
+  background-color: #286863;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }/*# sourceMappingURL=style.css.map */

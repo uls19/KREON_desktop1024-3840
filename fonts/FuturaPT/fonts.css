@@ -1,7 +1,7 @@
 /* Demi */
 @font-face {
     font-family: 'FuturaPT';
-    src: local('FuturaPT'),         url('fonts/FuturaPT-Demi.ttf') format('truetype'),         url('fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),         url('fonts/FuturaPT-Demi.woff') format('woff');     font-weight: normal;    font-style: normal;}/* Heavy */
+    src: local('FuturaPT'),         url('fonts/FuturaPT-Demi.ttf') format('truetype'),         url('fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),         url('fonts/FuturaPT-Demi.woff') format('woff');     font-weight:400;    font-style: normal;}/* Heavy */
 @font-face {
     font-family: 'FuturaPT';
     src: local('FuturaPT'),         url('FuturaPT-Heavy.ttf') format('truetype'),         url('FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),         url('FuturaPT-Heavy.woff') format('woff');     font-weight: 900;    font-style: normal;}/* Book */
