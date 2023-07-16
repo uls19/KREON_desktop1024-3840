@@ -20,7 +20,7 @@
 }
 
 .button:hover {
-  background: linear-gradient(-4deg, rgb(29, 70, 66) 0%, rgb(1, 191, 194) 100%);
+  background: -webkit-linear-gradient(86deg, rgb(29, 70, 66) 0%, rgb(2, 174, 178) 100%);
 }
 
 .container {
@@ -540,6 +540,11 @@
   background-size: 118px;
   background-repeat: no-repeat;
   background-position: top center;
+  transition: 0.5s ease;
+}
+.advantages__items:hover {
+  background-size: 130px;
+  cursor: pointer;
 }
 .advantages__item1 {
   background-image: url(./img/item1.png);
@@ -938,7 +943,8 @@
   margin-bottom: 80px;
 }
 
-.slider-prev, .slider-next {
+.slider-prev,
+.slider-next {
   height: 78px;
   border-radius: 50%;
   border: 0 solid #ffffff;
@@ -1025,4 +1031,49 @@
   font-weight: 500;
   font-style: normal;
   padding-right: 40px;
+}
+
+.answers {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 38px;
+}
+.answers__ul {
+  list-style-type: none;
+}
+.answers__list {
+  height: 60px;
+}
+.answers__link {
+  position: relative;
+  width: 800px;
+  display: inline-block;
+  padding-top: 11px;
+  padding-bottom: 16px;
+  font-size: 26px;
+  font-family: "FuturaPT";
+  color: rgb(0, 0, 0);
+  font-style: normal;
+  text-decoration: none;
+  background-image: url(./img/group.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 42px;
+}
+.answers__link:hover + .answers__line {
+  background-color: #02aeb2;
+}
+.answers__group {
+  width: 10px;
+  position: absolute;
+  right: 15px;
+  top: 28px;
+  fill: #00040b;
+}
+.answers__line {
+  background-color: rgb(232, 232, 232);
+  height: 3px;
+  border-radius: 3px;
+  border: 0px solid rgb(232, 232, 232);
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */
