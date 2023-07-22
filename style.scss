@@ -172,6 +172,7 @@ $background_button_hover: -webkit-linear-gradient(86deg, rgb(29, 70, 66) 0%, rgb
     }
 
     &__stock {
+        position: relative;
         max-width: 410px;
         // max-width: 942px;
         display: grid;
@@ -232,6 +233,7 @@ $background_button_hover: -webkit-linear-gradient(86deg, rgb(29, 70, 66) 0%, rgb
 
 
     &__stock-search {
+        position: relative;
         background-image: url(./img/search.png);
         background-size: 18px;
         background-repeat: no-repeat;
@@ -251,6 +253,28 @@ $background_button_hover: -webkit-linear-gradient(86deg, rgb(29, 70, 66) 0%, rgb
         background-color: #8fd5d6;
         transition: 0.3s;
     }
+    &__stock-text1 {
+        text-align: center;
+        padding-top: 22px;
+        width: 140px;
+        height: 32px;
+        position: absolute;
+        z-index: 100;
+        top:49px;
+        right: -48px;
+        background-image: url(./img/note1.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 140px;
+        font-size: 14px;
+        font-family: "FuturaPT", sans-serif;
+        color: #656565;
+        display: none;
+
+    }
+    &__stock-search:hover + &__stock-text1 {
+       display: block;
+    }
 
     &__logo {
         width: 120px;
@@ -260,6 +284,7 @@ $background_button_hover: -webkit-linear-gradient(86deg, rgb(29, 70, 66) 0%, rgb
     }
 
     &__function {
+        position: relative;
         display: grid;
         gap: 18px;
         grid-template-columns: repeat(4, 44px);
@@ -291,9 +316,32 @@ $background_button_hover: -webkit-linear-gradient(86deg, rgb(29, 70, 66) 0%, rgb
     &__circle-phone:hover {
         background-color: #8fd5d6;
     }
+    
 
     &__user {
         background-image: url(./img/user.png);
+    }
+    &__user-text2 {
+        text-align: center;
+        padding-top: 20px;
+        width: 250px;
+        height: 39px;
+        position: absolute;
+        z-index: 100;
+        top: 49px;
+        left: -102px;
+        background-image: url(./img/note2.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 250px;
+        font-size: 14px;
+        line-height: 0.9em;
+        font-family: "FuturaPT", sans-serif;
+        color: #656565;
+         display: none;
+    }
+    &__user:hover + &__user-text2 {
+        display: block;
     }
 
     &__frcircle {
@@ -302,6 +350,27 @@ $background_button_hover: -webkit-linear-gradient(86deg, rgb(29, 70, 66) 0%, rgb
 
     &__shopping {
         background-image: url(./img/shopping.png);
+    }
+    &__shopping-text3 {
+        text-align: center;
+        padding-top: 22px;
+        width: 140px;
+        height: 32px;
+        position: absolute;
+        z-index: 100;
+        top:49px;
+        right: 18px;
+        background-image: url(./img/note1.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 140px;
+        font-size: 14px;
+        font-family: "FuturaPT", sans-serif;
+        color: #656565;
+        display: none;
+    }
+    &__shopping:hover + &__shopping-text3 {
+    display: block;
     }
 
     &__circle-phone {
@@ -1039,7 +1108,7 @@ $background_button_hover: -webkit-linear-gradient(86deg, rgb(29, 70, 66) 0%, rgb
 
 .main__bottom {
     background-color: #ffffff;
-    box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, 0.19);
+    box-shadow: 0px -26px 81px 0px rgba(2, 69, 70, 0.19);
     padding-bottom: 96px;
 }
 
@@ -1171,6 +1240,8 @@ $background_button_hover: -webkit-linear-gradient(86deg, rgb(29, 70, 66) 0%, rgb
 
     &__header {
         height: 108px;
+        width: 250px;
+        margin: 0 auto;
         font-size: 62px;
         font-family: "Bebas Neue Cyrillic", sans-serif;
         font-weight: 400;
@@ -1182,7 +1253,7 @@ $background_button_hover: -webkit-linear-gradient(86deg, rgb(29, 70, 66) 0%, rgb
         text-transform: uppercase;
         letter-spacing: 14px;
         font-style: normal;
-        text-align: center;
+
     }
 
     &__text {
@@ -1429,4 +1500,170 @@ $background_button_hover: -webkit-linear-gradient(86deg, rgb(29, 70, 66) 0%, rgb
         transition: 0.3s;
     }
 
+}
+.footer {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #eeeeee ;
+    height: 1006px;
+
+    &__center {
+        padding-left: calc(50% - 1048px / 2);
+        padding-right: calc(50% - 1048px / 2);
+        padding-top: 70px;
+    }
+  
+    &__top {
+        display: flex;
+        height: 106px;
+        justify-content: space-between;
+        margin-bottom: 62px;
+    }
+  
+    // &__top-contacts {
+  
+    // }
+    &__top-header {
+        font-size: 25px;
+        font-family: "FuturaPT", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        height: 60px;
+    }
+    &__top-tel, &__top-mail {
+            font-size: 20px;
+            font-family: "FuturaPT", sans-serif;
+            font-style: normal;
+            color: rgb(0, 0, 0);
+          }
+    &__top-logo {
+        padding-top: 10px;
+
+          }
+        &__top-network {
+            width: 160px;
+
+        } 
+        &__network {
+            height: 44px;
+        }
+
+    &__top-link {
+        display: inline-block;
+        width: 65px; 
+        height: 65px;
+        
+        }
+
+    &__vk:hover #svgVk {
+        fill:#276a65;
+        
+         
+        }
+    &__telegram {
+        margin-left: 26px;
+        }
+    &__telegram:hover #svgTelegram {
+            fill:#276a65;
+        }    
+}
+
+#svgVk{
+    fill:#4D76A1;
+    transition: 0.3s;
+}
+#svgTelegram {
+    fill:#1c8adb;
+    transition: 0.3s;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 246px;
+
+// &__support {
+// }
+// &__extra {
+// }
+// &__personal {
+// }
+&__ul {
+    list-style-type: none;
+}
+// &__list {
+// }
+&__link {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "FuturaPT", sans-serif;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+&__link:hover {
+    text-decoration: underline;
+}
+}
+.footer-adress {
+    height: 360px;
+    margin-top: 46px;
+   background-image: url(./img/carta.jpg);
+   background-repeat: no-repeat;
+   background-size: 770px 360px ;
+   padding-left: 820px;
+
+
+
+// &__header {
+   
+// }
+&__text {
+    font-size: 20px;
+    font-family: "FuturaPT", sans-serif;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+}
+.footer-bottom {
+    height: 106px;
+    background-color: #02aeb2;
+    
+    &__ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding-left: calc(50% - 1048px / 2);
+        padding-right: calc(50% - 1048px / 2);
+        padding-top: 34px ;
+    }
+
+    // &__list {
+
+    // }
+
+    &__link {
+        display: block;
+        padding-right: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "FuturaPT", sans-serif;
+        font-style: normal;
+        color: rgb(255, 255, 255);
+    }
+
+   &__line {
+        background-color: rgb(0, 255, 255);
+        width: 60px;
+        height: 6px; 
+        opacity: 0;
+        transition: 0.3s;
+             
+       }
+
+    &__link:hover + &__line {
+        opacity: 1;
+        
+    }   
 }

@@ -99,6 +99,7 @@
   margin-right: 86px;
 }
 .header__stock {
+  position: relative;
   max-width: 410px;
   display: grid;
   grid-template-columns: 144px 144px 1fr;
@@ -139,6 +140,7 @@
   color: rgb(255, 255, 255);
 }
 .header__stock-search {
+  position: relative;
   background-image: url(./img/search.png);
   background-size: 18px;
   background-repeat: no-repeat;
@@ -153,11 +155,33 @@
   background-color: #8fd5d6;
   transition: 0.3s;
 }
+.header__stock-text1 {
+  text-align: center;
+  padding-top: 22px;
+  width: 140px;
+  height: 32px;
+  position: absolute;
+  z-index: 100;
+  top: 49px;
+  right: -48px;
+  background-image: url(./img/note1.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 140px;
+  font-size: 14px;
+  font-family: "FuturaPT", sans-serif;
+  color: #656565;
+  display: none;
+}
+.header__stock-search:hover + .header__stock-text1 {
+  display: block;
+}
 .header__logo {
   width: 120px;
   height: 44px;
 }
 .header__function {
+  position: relative;
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(4, 44px);
@@ -179,11 +203,54 @@
 .header__user {
   background-image: url(./img/user.png);
 }
+.header__user-text2 {
+  text-align: center;
+  padding-top: 20px;
+  width: 250px;
+  height: 39px;
+  position: absolute;
+  z-index: 100;
+  top: 49px;
+  left: -102px;
+  background-image: url(./img/note2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 250px;
+  font-size: 14px;
+  line-height: 0.9em;
+  font-family: "FuturaPT", sans-serif;
+  color: #656565;
+  display: none;
+}
+.header__user:hover + .header__user-text2 {
+  display: block;
+}
 .header__frcircle {
   background-image: url(./img/frcircle.png);
 }
 .header__shopping {
   background-image: url(./img/shopping.png);
+}
+.header__shopping-text3 {
+  text-align: center;
+  padding-top: 22px;
+  width: 140px;
+  height: 32px;
+  position: absolute;
+  z-index: 100;
+  top: 49px;
+  right: 18px;
+  background-image: url(./img/note1.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 140px;
+  font-size: 14px;
+  font-family: "FuturaPT", sans-serif;
+  color: #656565;
+  display: none;
+}
+.header__shopping:hover + .header__shopping-text3 {
+  display: block;
 }
 .header__circle-phone {
   background-image: url(./img/circle-phone.png);
@@ -748,7 +815,7 @@
 
 .main__bottom {
   background-color: #ffffff;
-  box-shadow: 0px 26px 81px 0px rgba(2, 69, 70, 0.19);
+  box-shadow: 0px -26px 81px 0px rgba(2, 69, 70, 0.19);
   padding-bottom: 96px;
 }
 
@@ -857,6 +924,8 @@
 }
 .reviews__header {
   height: 108px;
+  width: 250px;
+  margin: 0 auto;
   font-size: 62px;
   font-family: "Bebas Neue Cyrillic", sans-serif;
   font-weight: 400;
@@ -868,7 +937,6 @@
   text-transform: uppercase;
   letter-spacing: 14px;
   font-style: normal;
-  text-align: center;
 }
 .reviews__text {
   height: 94px;
@@ -1076,4 +1144,137 @@
   border-radius: 3px;
   border: 0px solid rgb(232, 232, 232);
   transition: 0.3s;
+}
+
+.footer {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #eeeeee;
+  height: 1006px;
+}
+.footer__center {
+  padding-left: calc(50% - 524px);
+  padding-right: calc(50% - 524px);
+  padding-top: 70px;
+}
+.footer__top {
+  display: flex;
+  height: 106px;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+.footer__top-header {
+  font-size: 25px;
+  font-family: "FuturaPT", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  height: 60px;
+}
+.footer__top-tel, .footer__top-mail {
+  font-size: 20px;
+  font-family: "FuturaPT", sans-serif;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+}
+.footer__top-logo {
+  padding-top: 10px;
+}
+.footer__top-network {
+  width: 160px;
+}
+.footer__network {
+  height: 44px;
+}
+.footer__top-link {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+}
+.footer__vk:hover #svgVk {
+  fill: #276a65;
+}
+.footer__telegram {
+  margin-left: 26px;
+}
+.footer__telegram:hover #svgTelegram {
+  fill: #276a65;
+}
+
+#svgVk {
+  fill: #4D76A1;
+  transition: 0.3s;
+}
+
+#svgTelegram {
+  fill: #1c8adb;
+  transition: 0.3s;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 246px;
+}
+.footer-content__ul {
+  list-style-type: none;
+}
+.footer-content__link {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "FuturaPT", sans-serif;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+}
+.footer-content__link:hover {
+  text-decoration: underline;
+}
+
+.footer-adress {
+  height: 360px;
+  margin-top: 46px;
+  background-image: url(./img/carta.jpg);
+  background-repeat: no-repeat;
+  background-size: 770px 360px;
+  padding-left: 820px;
+}
+.footer-adress__text {
+  font-size: 20px;
+  font-family: "FuturaPT", sans-serif;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+}
+
+.footer-bottom {
+  height: 106px;
+  background-color: #02aeb2;
+}
+.footer-bottom__ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: calc(50% - 524px);
+  padding-right: calc(50% - 524px);
+  padding-top: 34px;
+}
+.footer-bottom__link {
+  display: block;
+  padding-right: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "FuturaPT", sans-serif;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+}
+.footer-bottom__line {
+  background-color: rgb(0, 255, 255);
+  width: 60px;
+  height: 6px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.footer-bottom__link:hover + .footer-bottom__line {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
