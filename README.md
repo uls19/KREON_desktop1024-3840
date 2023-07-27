@@ -1,2 +1,2 @@
 # KREON_desktop1280-3840
-Магазин косметики / Адаптив 1024>3480px версия desktop.
+Магазин косметики / Adapted 1024>3480px desktop-version.
